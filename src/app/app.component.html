@@ -1,0 +1,3 @@
+<app-watch [hours]="hours" [minutes]="minutes" [seconds] ="seconds"></app-watch>
+<button (click)="startStop()">{{isStopped ? "Start" : "Stop"}}</button>
+<button *ngIf="!isStopped" (click)="isPaused=!isPaused">{{isPaused ? "Play" : "Pause"}}</button>
